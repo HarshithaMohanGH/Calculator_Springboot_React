@@ -48,34 +48,6 @@ const Calculator = () => {
         setError('Error: ' + error.message);
     }
 };
-
-/*
-  const calculateResult = async () => {
-    try {
-      const response = await fetch(`http://localhost:8080/api/${operation}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ num1: parseInt(num1), num2: parseInt(num2) })
-      });
-      
-      if (!response.ok) {
-        throw new Error('Failed to fetch');
-      }
-
-      const data = await response.json();
-      setResult(data);
-      setError('');
-    } catch (error) {
-      setResult('');
-      setError('Error: ' + error.message);
-    }
-  };
-
-  */
-
-
   return (
     <div className="calculator">
       <h2>Simple Calculator</h2>
